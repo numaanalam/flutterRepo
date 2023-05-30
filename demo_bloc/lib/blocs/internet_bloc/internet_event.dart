@@ -1,0 +1,10 @@
+abstract class InternetEvent {}
+
+class InternetLostEvent extends InternetEvent {}
+
+class InternetGainedEvent extends InternetEvent {}
+
+class CheckEligibilityEvent extends InternetEvent {
+  final age;
+  CheckEligibilityEvent(this.age);
+}
